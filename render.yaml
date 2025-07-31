@@ -1,0 +1,9 @@
+services:
+  - type: static_site
+    name: ezalgo-static
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: ./out
+    envVars:
+      - key: NODE_VERSION
+        value: 18
